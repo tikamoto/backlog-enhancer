@@ -1,0 +1,22 @@
+{
+  "name": "backlog-enhancer",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "@types/chrome": "0.0.236",
+    "copy-webpack-plugin": "^11.0.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.83.1",
+    "webpack-cli": "^5.1.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack watch"
+  },
+  "author": "tikamoto",
+  "license": "ISC",
+  "volta": {
+    "node": "18.16.0"
+  }
+}

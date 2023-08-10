@@ -1,0 +1,60 @@
+/* カードスタイル */
+#kanban li.card.priority-high {
+    background-color: #feeebb;
+}
+#kanban li.card.priority-middle {
+    background-color: #fff;
+}
+#kanban li.card.priority-low {
+    background-color: #ddd ;
+}
+#kanban li.card.watch {
+    border-left: 5px solid #f33;
+}
+#kanban li.card.watch .watch-comment {
+    color: #f33;
+    border: 1px solid #f33;
+    background: #fcc;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+#kanban li.card .card-summary {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* レーン */
+#kanban section.closed {
+    width: 50px;
+}
+#kanban section.closed .SlotHead {
+    writing-mode: vertical-rl;
+    margin-top:3px;
+}
+#kanban section .SlotHead .StatusIcon {
+    cursor:pointer;
+    text-align: center;
+    line-height: 14px;
+    font-size: 14px;
+    color: #fff;
+}
+#kanban section .SlotHead .StatusIcon:after {
+    content: "‐";
+}
+#kanban section.closed .SlotHead .StatusIcon{
+    margin: 0 0 5px 0;
+    writing-mode: horizontal-tb;
+}
+#kanban section.closed .SlotHead .StatusIcon:after {
+    content: "+";
+}
+#kanban section.closed .SlotHead .CardLength{
+    writing-mode: horizontal-tb;
+    margin-left:0;
+    margin-top:10px;
+}
+#kanban section.closed .StyledQuickAddIssue,
+#kanban section.closed .SlotBox {
+    display:none;
+}
