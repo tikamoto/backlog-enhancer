@@ -58,3 +58,23 @@
 #kanban section.closed .SlotBox {
     display:none;
 }
+
+/* ダークモード */
+html.dark-mode #kanban li.card.priority-high {
+    background-color: #4d4d3b;
+}
+html.dark-mode #kanban li.card.priority-middle {
+    background-color: #3d3d3d;
+}
+html.dark-mode #kanban li.card.priority-low {
+    background-color: #333;
+    border: 1px solid #444;
+    color: #888;
+}
+html.dark-mode #kanban li.card.watch {
+    border-left: 5px solid #c33;
+}
+html.dark-mode #kanban li.card.watch .watch-comment {
+    color: #c33;
+    border: 1px solid #c33;
+}
