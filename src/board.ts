@@ -98,7 +98,7 @@ window.addEventListener('load', () => {
 
         //レーンの開閉制御
         document.querySelectorAll('.StatusIcon').forEach((el: Element) => {
-            const statusId = (el.closest('section').querySelector('.SlotBox') as HTMLElement).dataset.statusid;
+            const statusId = (el.closest('section').querySelector('.SlotBox[data-statusid]') as HTMLElement).dataset.statusid;
             const lane = new Lane(Number(statusId));
             el.addEventListener('click', () => {
                 lane.invert();
